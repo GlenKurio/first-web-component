@@ -7,13 +7,24 @@
   </head>
   <body>
     <h1>Hello World</h1>
-    <user-card
-      name="Ole Miko"
-      avatar="https://randomuser.me/api/portraits/men/9.jpg"
+    <div
+      style="display: flex; flex-direction: column; gap: 4rem; padding: 2rem"
     >
-      <div slot="email">johndoe@mail.com</div>
-      <div slot="phone">+123-987-456</div>
-    </user-card>
+      <user-card
+        name="john Doe"
+        avatar="https://randomuser.me/api/portraits/men/2.jpg"
+      >
+        <div slot="email">johndoe@mail.com</div>
+        <div slot="phone">+123-987-456</div>
+      </user-card>
+      <user-card
+        name="Janis Doe"
+        avatar="https://randomuser.me/api/portraits/women/2.jpg"
+      >
+        <div slot="email">janisdoe@mail.com</div>
+        <div slot="phone">+145-785-013</div>
+      </user-card>
+    </div>
     <script src="userCard.js"></script>
   </body>
 </html>

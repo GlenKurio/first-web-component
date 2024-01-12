@@ -1,10 +1,24 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
+.user-card {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background-color: goldenrod;
+    border-radius: 2rem;
+    overflow: hidden;
 
+}
+
+.info {
+    display: flex;
+    
+}
 
 h3 {
-    color: blue;
+    color: white;
+    text-transform: capitalize;
 }
 </style>
 
@@ -25,7 +39,7 @@ class UserCard extends HTMLElement {
   constructor() {
     super();
 
-    this.showInfo = true;
+    this.showInfo = false;
 
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
