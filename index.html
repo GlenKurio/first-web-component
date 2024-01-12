@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components Demo</title>
+  </head>
+  <body>
+    <h1>Hello World</h1>
+    <user-card
+      name="Ole Miko"
+      avatar="https://randomuser.me/api/portraits/men/9.jpg"
+    >
+      <div slot="email">johndoe@mail.com</div>
+      <div slot="phone">+123-987-456</div>
+    </user-card>
+    <script src="userCard.js"></script>
+  </body>
+</html>
